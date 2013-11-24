@@ -14,5 +14,18 @@ class PlayerMapper extends Mapper
 		return parent::getAll();
 	}
 
+	//TODO parameters invulle
+	public function addPlayer(){
+		return parent::add();
+	}
+	
+	public function update($object){
+		return parent::update($object);
+	}
+
+	public function delete($id){
+		return parent::delete($id);
+	}
+
 }
 ?>

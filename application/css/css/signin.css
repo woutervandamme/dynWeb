@@ -1,19 +1,16 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
+body{
   background-color: #eee;
-
 }
-
-
 
 .navbar{
 background-color:#bf3f34;
 border:1px solid #bf3f34;
 }
 
+
+
 .container{
-  margin-top:50px;
+margin-top:100px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
@@ -41,18 +38,6 @@ border:1px solid #bf3f34;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-#registreer{
-margin-left:60px;
-}
-
-.btn-primary{
-  background-color:#bf3f34;
-}
-
-.btn-primary:hover{
-  background-color: #ad3b30;
-}
-
 
 .form-signin .form-control:focus {
   z-index: 2;
@@ -68,6 +53,3 @@ margin-left:60px;
   border-top-right-radius: 0;
 }
 
-#container{
-  margin-top:100px;
-}

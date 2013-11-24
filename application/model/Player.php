@@ -1,8 +1,8 @@
 <?php
+require_once(SYSTEM_PATH . 'model/Identifiable.php');
 
-class Player{
+class Player extends Identifiable{
 
-private $id;
 private $email;
 private $naam;
 private $password;
@@ -11,6 +11,16 @@ private $isblocked;
 
 public function __construct(){
 	
+}
+
+public function toArray(){
+    $fields['email'] = $this->email;
+    $fields['naam'] = $this->naam;
+    $fields['password'] = $this->password;
+    $fields['isadmin'] = $this->isadmin;
+    $fields['isblocked'] = $this->isblocked;
+
+    return $fields;
 }
 
 public function __toString(){
@@ -22,13 +32,6 @@ public function setNaam($naam){
 }
 public function getNaam(){
 	return $this->naam;
-}
-
-public function setId($id){
-	$this->id = $id;
-}
-public function getId(){
-	return $this->id;
 }
 
 public function setEmail($email){
@@ -49,14 +52,14 @@ public function setBlocked($isblocked){
 	$this->isblocked = $isblocked;
 }
 public function isBlocked(){
-	return $this->isBlocked;
+	return $this->isblocked;
 }
 
 public function setAdmin($isadmin){
 	$this->isadmin = $isadmin;
 }
 public function isAdmin(){
-	return $this->isAdmin;
+	return $this->isadmin;
 }
 
 

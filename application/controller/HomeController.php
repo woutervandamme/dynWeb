@@ -1,16 +1,17 @@
 <?php
-class HomeController
+require_once(SYSTEM_PATH . 'controller/Controller.php');
+
+class HomeController extends Controller
 {	
-	public function __construct() {
-    }
+
+	public function __construct () {
+		parent::__construct();
+	}
 
     public function index()
-    {
-        require_once(APPLICATION_PATH . 'view/home.php');
+    { 
+        $this->_template->setPagetitle('Home');  
+        $this->_template->render('home');
     }
 
-    public function display($text = 'no text')
-    {
-        require_once(APPLICATION_PATH . 'view/display.php');
-    }
 }
