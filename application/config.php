@@ -8,8 +8,8 @@ require_once('.db_password.php');
 
 $db_config = array(
     'driver' => 'pgsql',
-    'username' =>'r0427697',
-    'password' => 'khXanklateuris1en',
+    'username' =>$username,
+    'password' => $password,
     'schema' => 'project_r0427697',
     'dsn' => array(
         'host' => 'gegevensbanken.khleuven.be',
@@ -17,3 +17,4 @@ $db_config = array(
         'port' => '51314',
     )
 );
+
